@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Относительное выравнивание, используется весь экран
+     и фоновая картинка "background1" -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_1">
+
+    <!-- Выравнивание от верхнего края экрана (android:layout_alignParentTop="true")
+         по-центру по-горизонтали (android:gravity="center")
+         c наклоном текста в 4 градуса (android:rotation="4"),
+         желтым цветом (android:textColor="#F2E70E")
+         и 36 относительным размером android:textSize="36sp" -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:rotation="4"
+        android:textColor="#02579A"
+        android:textSize="36sp"
+        android:typeface="monospace"
+        android:text="@string/Ваш_компьютер"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold|italic"
+        android:text="@string/Опросник"
+        android:textColor="#000000"
+
+
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="italic"
+        android:text="@string/Описание"
+        android:textColor="#000000"
+
+
+        />
+
+
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/exit"
+        android:onClick="onNext"
+        android:text="@string/Далее" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="onExit"
+        android:text="@string/Выход" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="500px"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/emblem" />
+
+</RelativeLayout>

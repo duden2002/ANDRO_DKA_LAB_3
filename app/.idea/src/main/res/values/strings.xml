@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">ANDRO_DKA_LAB_3</string>
+
+    <string name="Ваш_компьютер">Ваш компьютер</string>
+    <string name="Имя_пользователя">Имя пользователя</string>
+    <string name="Тип_комьютера">Тип компьютера</string>
+    <string name="Стационарный">Стационарный</string>
+    <string name="Мобильный">Мобильный</string>
+    <string name="Оперционная_система">Операционная система</string>
+    <string name="Windows">Windows</string>
+    <string name="Linux">Linux</string>
+    <string name="Mac">Mac</string>
+    <string name="Далее">Далее</string>
+    <string name="Назад">Назад</string>
+    <string name="Выход">Выход</string>
+    <string name="Производитель_CPU">Выбрать производителя CPU</string>
+    <string name="INTEL">INTEL</string>
+    <string name="AMD">AMD</string>
+    <string name="NVIDIA">NVIDIA</string>
+    <string name="БАЙКАЛ">БАЙКАЛ</string>
+    <string name="Производитель_материнской_платы">Производитель материнской платы</string>
+    <string name="Итоговые_данные">Итоговые данные</string>
+    <string name="CPU">Производитель CPU</string>
+    <string name="name">Имя пользователя</string>
+    <string name="Опросник">Опросник</string>
+    <string name="Описание">Этот небольшой опросник связан с некоторыми характеристиками ваше компьютера</string>
+
+
+    <string-array name="mathBoard_arrays">
+        <item>ASUS</item>
+        <item>MSI</item>
+        <item>GIGABYTE</item>
+        <item>ASROCK</item>
+        <item>BIOSTAR</item>
+    </string-array>
+</resources>

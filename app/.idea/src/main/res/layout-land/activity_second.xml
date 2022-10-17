@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2">
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:hint="@string/Имя_пользователя"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#DCDCDC" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold|italic"
+        android:text="@string/Производитель_CPU"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#DCDCDC"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="110dp"
+        android:layout_height="134dp"
+        android:layout_below="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/INTEL"
+            android:textColor="#DCDCDC" />
+
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/AMD"
+            android:textColor="#DCDCDC" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/БАЙКАЛ"
+            android:textColor="#DCDCDC" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="-134dp"
+        android:gravity="center"
+        android:text="@string/Производитель_материнской_платы"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#DCDCDC"
+        android:textStyle="bold|italic" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="578dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginStart="64dp"
+        android:layout_toEndOf="@+id/radioGroup"
+        android:entries="@array/mathBoard_arrays"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold|italic"
+        android:text="@string/Тип_комьютера"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#DCDCDC"
+
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:text="@string/Стационарный"
+        android:textColor="#DCDCDC" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_above="@+id/back"
+        android:layout_marginBottom="-10dp"
+        android:onClick="onNext"
+        android:text="@string/Далее" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-10dp"
+        android:onClick="onBack"
+        android:text="@string/Назад" />
+
+
+
+
+</RelativeLayout>
